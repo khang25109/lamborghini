@@ -1,0 +1,68 @@
+
+.display-header{
+	background-color: #181818;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	column-gap: 10px;
+	align-items: center;
+	justify-items: center;
+	padding-left: 70px;
+	font-size: 15px;
+}
+
+.logo-header
+,.models-header 
+,.beyond-header 
+,.ownership-header
+,.motorsport-header{
+	color: white;
+	flex: 1;
+	text-align: center;
+}
+
+.motorsport-header
+,.ownership-header{
+	margin-left: 15px;
+}
+
+.models-header:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+
+.gap{
+	flex: 10;
+}
+
+.dealerships-header
+,.museum-header
+,.store-header
+,.comment-icon-header
+,.search-icon-header
+,.menu-icon-header
+{
+	color: white;
+	flex: 1;
+	text-align: center;
+	justify-items: center;
+  position: relative;  
+}
+.dealerships-header{
+	margin-right: 20px;
+}
+
+.gg-comment
+,.gg-search
+,.gg-menu{
+	position: absolute;
+	--ggs:1.5;
+}
+.gg-comment{
+	left: 35px;
+
+}
+.gg-search{
+	left: 25px;
+}
