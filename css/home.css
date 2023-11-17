@@ -4,10 +4,10 @@
 	height: 100px;
 	display: flex;
 	flex-direction: row;
-	column-gap: 10px;
+	column-gap: 25px;
 	align-items: center;
 	justify-items: center;
-	padding-left: 70px;
+	padding: 0 70px 0 70px;
 	font-size: 15px;
 }
 
@@ -15,22 +15,15 @@
 ,.models-header 
 ,.beyond-header 
 ,.ownership-header
-,.motorsport-header{
+,.motorsport-header
+,.dealerships-header
+,.museum-header
+,.store-header{
 	color: white;
 	flex: 1;
 	text-align: center;
+	position: relative;
 }
-
-.motorsport-header
-,.ownership-header{
-	margin-left: 15px;
-}
-
-.models-header:hover{
-	cursor: pointer;
-	text-decoration: underline;
-}
-
 
 .gap{
 	flex: 10;
@@ -47,22 +40,64 @@
 	flex: 1;
 	text-align: center;
 	justify-items: center;
-  position: relative;  
-}
-.dealerships-header{
-	margin-right: 20px;
+	align-content: center;
 }
 
 .gg-comment
 ,.gg-search
 ,.gg-menu{
-	position: absolute;
 	--ggs:1.5;
 }
-.gg-comment{
-	left: 35px;
+
+.comment-icon-header{
+	margin-left: 20px;
+}
+
+.gg-search{
+	margin-left: 40px;
+}
+
+.models-header:hover
+,.beyond-header:hover 
+,.ownership-header:hover
+,.motorsport-header:hover
+,.dealerships-header:hover
+,.museum-header:hover
+,.store-header:hover
+,.comment-icon-header:hover
+,.search-icon-header:hover
+,.menu-icon-header:hover{
+	cursor: pointer;
+}
+
+.models-header::after
+,.beyond-header::after
+,.ownership-header::after
+,.motorsport-header::after
+,.dealerships-header::after
+,.museum-header::after
+,.store-header::after
+{
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	transform: scale(0);
+	height: 1px;
+	background-color: white;
+	transform-origin: bottom right;
+	transition: transform 0.5s ease-out;
 
 }
-.gg-search{
-	left: 25px;
+
+.models-header:hover::after
+,.beyond-header:hover::after
+,.ownership-header:hover::after
+,.motorsport-header:hover::after
+,.dealerships-header:hover::after
+,.museum-header:hover::after
+,.store-header:hover::after{
+	transform: scale(1);
+	transform-origin: bottom left;
 }
